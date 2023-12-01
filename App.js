@@ -26,11 +26,11 @@ export default function App() {
     <Auth>
       <Provider store={store}>
         <NavigationContainer>
+          <Header />
           <NativeBaseProvider>
-            <Header />
             <Main />
-            <Toast ref={(ref) => Toast.setRef(ref)} />
           </NativeBaseProvider>
+          <Toast ref={(ref) => Toast.setRef(ref)} />
         </NavigationContainer>
       </Provider>
     </Auth>
